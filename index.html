@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positiva Contabilidade — Contabilidade e consultoria</title>
+  <meta name="description" content="Positiva Contabilidade: serviços contábeis, fiscal e departamento pessoal com atendimento próximo e transparente.">
+  <link rel="stylesheet" href="styler/style.css">
+</head>
+<body>
+  <div class="nav-overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="marca" href="#inicio">
+        <span class="marca-icone" aria-hidden="true">PC</span>
+        <span class="marca-texto">
+          Positiva Contabilidade
+          <small>Contabilidade &amp; consultoria</small>
+        </span>
+      </a>
+
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-principal" id="menu-principal" aria-label="Principal">
+        <ul class="nav-lista">
+          <li><a href="#inicio" class="ativo">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a class="btn-cta" href="#contato">Fale conosco</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-inner">
+        <h1>Contabilidade que fortalece o seu negócio</h1>
+        <p>
+          Na Positiva Contabilidade unimos experiência técnica e atendimento humano para cuidar das suas obrigações fiscais,
+          da folha de pagamento e da saúde financeira da sua empresa.
+        </p>
+        <div class="hero-acoes">
+          <a class="btn-cta" href="#contato">Solicitar proposta</a>
+          <a class="btn-secundario" href="#servicos">Conhecer serviços</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="servicos">
+      <div class="secao-inner">
+        <h2 class="titulo-secao">Serviços</h2>
+        <p class="subtitulo-secao">
+          Soluções completas para empresas que buscam conformidade, organização e tranquilidade na gestão contábil.
+        </p>
+        <div class="grid-servicos">
+          <article class="card">
+            <h3>Contabilidade geral</h3>
+            <p>Escrituração, balanços, demonstrações e acompanhamento mensal conforme normas vigentes.</p>
+          </article>
+          <article class="card">
+            <h3>Planejamento tributário</h3>
+            <p>Análise do regime mais adequado e orientação para reduzir riscos e otimizar custos dentro da lei.</p>
+          </article>
+          <article class="card">
+            <h3>Fiscal e obrigações acessórias</h3>
+            <p>Apuração de impostos, entregas de declarações e suporte em fiscalizações e auditorias.</p>
+          </article>
+          <article class="card">
+            <h3>Departamento pessoal</h3>
+            <p>Admissões, folha de pagamento, encargos, eSocial e benefícios com segurança e prazos cumpridos.</p>
+          </article>
+          <article class="card">
+            <h3>Abertura e regularização</h3>
+            <p>Constituição de empresas, alterações contratuais e regularização junto aos órgãos competentes.</p>
+          </article>
+          <article class="card">
+            <h3>Consultoria</h3>
+            <p>Apoio na tomada de decisões, custos, precificação e indicadores para um crescimento sustentável.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="sobre" style="background: #fff;">
+      <div class="secao-inner">
+        <h2 class="titulo-secao">Sobre a Positiva</h2>
+        <p class="subtitulo-secao" style="margin-bottom: 1rem;">
+          Somos um escritório de contabilidade focado em relacionamento de longo prazo e resultados positivos para o seu negócio.
+        </p>
+        <ul class="lista-check">
+          <li>Equipe atualizada com a legislação e as melhores práticas do setor.</li>
+          <li>Comunicação clara: você entende o que acontece na sua empresa.</li>
+          <li>Tecnologia a serviço da agilidade, sem perder o contato humano.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao" id="contato">
+      <div class="secao-inner">
+        <h2 class="titulo-secao">Contato</h2>
+        <p class="subtitulo-secao">Fale com a Positiva Contabilidade pelo canal que preferir.</p>
+        <div class="contato-box">
+          <p><strong>Telefone / WhatsApp:</strong> (00) 00000-0000</p>
+          <p><strong>E-mail:</strong> contato@positivacontabilidade.com.br</p>
+          <p><strong>Endereço:</strong> Rua Exemplo, 123 — Centro — Cidade/UF</p>
+          <p style="margin-bottom: 0; font-size: 0.9rem; color: var(--cor-texto-suave);">
+            Horário de atendimento: segunda a sexta, 8h às 18h.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="ano"></span> Positiva Contabilidade. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script/menu.js"></script>
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -5,123 +5,475 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Positiva Contabilidade — Contabilidade e consultoria</title>
   <meta name="description" content="Positiva Contabilidade: serviços contábeis, fiscal e departamento pessoal com atendimento próximo e transparente.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styler/style.css">
 </head>
 <body>
   <div class="nav-overlay" aria-hidden="true"></div>
 
   <header class="site-header">
-    <div class="header-inner">
-      <a class="marca" href="#inicio">
-        <span class="marca-icone" aria-hidden="true">PC</span>
-        <span class="marca-texto">
-          Positiva Contabilidade
-          <small>Contabilidade &amp; consultoria</small>
-        </span>
-      </a>
+    <div class="header-bar">
+      <div class="header-inner">
+        <a class="marca" href="#inicio">
+          <span class="marca-icone" aria-hidden="true">PC</span>
+          <span class="marca-texto">
+            Positiva Contabilidade
+            <small>Contabilidade &amp; consultoria</small>
+          </span>
+        </a>
 
-      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-      <nav class="nav-principal" id="menu-principal" aria-label="Principal">
-        <ul class="nav-lista">
-          <li><a href="#inicio" class="ativo">Início</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-        <div class="nav-cta">
-          <a class="btn-cta" href="#contato">Fale conosco</a>
-        </div>
-      </nav>
+        <nav class="nav-principal" id="menu-principal" aria-label="Principal">
+          <ul class="nav-lista">
+            <li><a href="#inicio" class="ativo">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+          <div class="nav-cta">
+            <a class="btn-cta" href="#contato">Fale conosco</a>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero" id="inicio">
       <div class="hero-inner">
-        <h1>Contabilidade que fortalece o seu negócio</h1>
-        <p>
-          Na Positiva Contabilidade unimos experiência técnica e atendimento humano para cuidar das suas obrigações fiscais,
-          da folha de pagamento e da saúde financeira da sua empresa.
-        </p>
-        <div class="hero-acoes">
-          <a class="btn-cta" href="#contato">Solicitar proposta</a>
-          <a class="btn-secundario" href="#servicos">Conhecer serviços</a>
+        <div class="hero-grid">
+          <div class="hero-col-texto">
+            <h1 class="hero-titulo">
+              Contabilidade<br>
+              que <span class="hero-destaque">fortalece</span><br>
+              o seu negócio
+            </h1>
+            <p>
+              Na Positiva Contabilidade unimos experiência técnica e atendimento humano para cuidar das suas obrigações fiscais,
+              da folha de pagamento e da saúde financeira da sua empresa.
+            </p>
+            <div class="hero-acoes">
+              <a class="btn-cta" href="#contato">Solicitar proposta</a>
+              <a class="btn-secundario" href="#servicos">Conhecer serviços</a>
+            </div>
+          </div>
+          <aside class="hero-visao-card" aria-labelledby="hero-visao-titulo">
+            <div class="hero-visao-inner">
+              <div class="hero-visao-top">
+                <p class="hero-visao-titulo" id="hero-visao-titulo">Visão financeira</p>
+                <span class="hero-visao-badge">
+                  <span class="hero-visao-arrow" aria-hidden="true">↑</span>
+                  +24% este mês
+                </span>
+              </div>
+              <div class="hero-visao-chart" role="img" aria-label="Indicadores ilustrativos em formato de barras">
+                <span class="hero-bar" style="--h: 42%"></span>
+                <span class="hero-bar" style="--h: 55%"></span>
+                <span class="hero-bar hero-bar--destaque" style="--h: 92%"></span>
+                <span class="hero-bar" style="--h: 48%"></span>
+                <span class="hero-bar" style="--h: 64%"></span>
+                <span class="hero-bar hero-bar--secundaria" style="--h: 76%"></span>
+              </div>
+              <div class="hero-visao-stats">
+                <div class="hero-stat">
+                  <span class="hero-stat-val">R$142k</span>
+                  <span class="hero-stat-lbl">Faturamento</span>
+                </div>
+                <div class="hero-stat hero-stat--economia">
+                  <span class="hero-stat-val">R$38k</span>
+                  <span class="hero-stat-lbl">Economia fiscal</span>
+                </div>
+                <div class="hero-stat">
+                  <span class="hero-stat-val">0</span>
+                  <span class="hero-stat-lbl">Multas/Pendências</span>
+                </div>
+                <div class="hero-stat">
+                  <span class="hero-stat-val">100%</span>
+                  <span class="hero-stat-lbl">Em dia</span>
+                </div>
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="secao" id="servicos">
-      <div class="secao-inner">
-        <h2 class="titulo-secao">Serviços</h2>
-        <p class="subtitulo-secao">
-          Soluções completas para empresas que buscam conformidade, organização e tranquilidade na gestão contábil.
-        </p>
-        <div class="grid-servicos">
-          <article class="card">
-            <h3>Contabilidade geral</h3>
-            <p>Escrituração, balanços, demonstrações e acompanhamento mensal conforme normas vigentes.</p>
-          </article>
-          <article class="card">
-            <h3>Planejamento tributário</h3>
-            <p>Análise do regime mais adequado e orientação para reduzir riscos e otimizar custos dentro da lei.</p>
-          </article>
-          <article class="card">
-            <h3>Fiscal e obrigações acessórias</h3>
-            <p>Apuração de impostos, entregas de declarações e suporte em fiscalizações e auditorias.</p>
-          </article>
-          <article class="card">
-            <h3>Departamento pessoal</h3>
-            <p>Admissões, folha de pagamento, encargos, eSocial e benefícios com segurança e prazos cumpridos.</p>
-          </article>
-          <article class="card">
-            <h3>Abertura e regularização</h3>
-            <p>Constituição de empresas, alterações contratuais e regularização junto aos órgãos competentes.</p>
-          </article>
-          <article class="card">
-            <h3>Consultoria</h3>
-            <p>Apoio na tomada de decisões, custos, precificação e indicadores para um crescimento sustentável.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="secao" id="sobre" style="background: #fff;">
-      <div class="secao-inner">
-        <h2 class="titulo-secao">Sobre a Positiva</h2>
-        <p class="subtitulo-secao" style="margin-bottom: 1rem;">
-          Somos um escritório de contabilidade focado em relacionamento de longo prazo e resultados positivos para o seu negócio.
-        </p>
-        <ul class="lista-check">
-          <li>Equipe atualizada com a legislação e as melhores práticas do setor.</li>
-          <li>Comunicação clara: você entende o que acontece na sua empresa.</li>
-          <li>Tecnologia a serviço da agilidade, sem perder o contato humano.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="secao" id="contato">
-      <div class="secao-inner">
-        <h2 class="titulo-secao">Contato</h2>
-        <p class="subtitulo-secao">Fale com a Positiva Contabilidade pelo canal que preferir.</p>
-        <div class="contato-box">
-          <p><strong>Telefone / WhatsApp:</strong> (00) 00000-0000</p>
-          <p><strong>E-mail:</strong> contato@positivacontabilidade.com.br</p>
-          <p><strong>Endereço:</strong> Rua Exemplo, 123 — Centro — Cidade/UF</p>
-          <p style="margin-bottom: 0; font-size: 0.9rem; color: var(--cor-texto-suave);">
-            Horário de atendimento: segunda a sexta, 8h às 18h.
+    <section class="secao secao-servicos" id="servicos">
+      <div class="secao-inner servicos-inner">
+        <header class="servicos-cabecalho">
+          <p class="servicos-badge">
+            <span class="servicos-badge-ico" aria-hidden="true">✦</span>
+            O que fazemos
           </p>
+          <h2 class="servicos-titulo">
+            Serviços contábeis <span class="servicos-titulo-destaque">completos</span>
+          </h2>
+          <p class="servicos-sub">
+            Da abertura da empresa à gestão financeira, cuidamos de tudo para o seu negócio crescer sem preocupações.
+          </p>
+        </header>
+        <div class="servicos-grid">
+          <article class="servico-card">
+            <div class="servico-card-inner">
+              <div class="servico-ico" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 21V9.5L12 4l8 5.5V21H4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.5 21V14h5v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M9 10h2M13 10h2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              </div>
+              <div class="servico-corpo">
+                <h3 class="servico-card-titulo">Abertura e regularização de empresas</h3>
+                <p class="servico-card-texto">Constituição, enquadramento e alterações junto aos órgãos competentes, com segurança jurídica.</p>
+                <ul class="servico-tags">
+                  <li>MEI</li>
+                  <li>LTDA</li>
+                  <li>ME</li>
+                  <li>S/A</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="servico-card">
+            <div class="servico-card-inner">
+              <div class="servico-ico" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 3h10a2 2 0 012 2v15l-4-2-4 2-4-2-4 2V5a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 8h8M8 12h6M8 16h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              </div>
+              <div class="servico-corpo">
+                <h3 class="servico-card-titulo">Contabilidade e escrituração fiscal</h3>
+                <p class="servico-card-texto">Livros, demonstrações e obrigações acessórias em dia, conforme normas e prazos oficiais.</p>
+                <ul class="servico-tags">
+                  <li>SPED</li>
+                  <li>ECF</li>
+                  <li>EFD</li>
+                  <li>DIRF</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="servico-card">
+            <div class="servico-card-inner">
+              <div class="servico-ico" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="9" cy="7" r="3.5" stroke="currentColor" stroke-width="1.6"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </div>
+              <div class="servico-corpo">
+                <h3 class="servico-card-titulo">Departamento pessoal e RH</h3>
+                <p class="servico-card-texto">Folha, admissões, encargos e conformidade trabalhista com agilidade e transparência.</p>
+                <ul class="servico-tags">
+                  <li>eSocial</li>
+                  <li>FGTS</li>
+                  <li>INSS</li>
+                  <li>IRRF</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="servico-card">
+            <div class="servico-card-inner">
+              <div class="servico-ico" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7H14a3.5 3.5 0 010 7H6" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="servico-corpo">
+                <h3 class="servico-card-titulo">Planejamento tributário</h3>
+                <p class="servico-card-texto">Escolha e manutenção do regime mais adequado, com foco em economia legal e previsibilidade.</p>
+                <ul class="servico-tags">
+                  <li>Simples Nacional</li>
+                  <li>Lucro Presumido</li>
+                  <li>Lucro Real</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="servico-card">
+            <div class="servico-card-inner">
+              <div class="servico-ico" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 18h18M5 14l4-6 4 3 5-7 3 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 21h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </div>
+              <div class="servico-corpo">
+                <h3 class="servico-card-titulo">Consultoria e gestão financeira</h3>
+                <p class="servico-card-texto">Indicadores, fluxo de caixa e apoio à decisão para um crescimento sustentável.</p>
+                <ul class="servico-tags">
+                  <li>DRE</li>
+                  <li>Fluxo de caixa</li>
+                  <li>KPIs</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <article class="servico-card">
+            <div class="servico-card-inner">
+              <div class="servico-ico" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 3H5a2 2 0 00-2 2v3M16 21h3a2 2 0 002-2v-3M16 3l4 4-4 4M8 21l-4-4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="servico-corpo">
+                <h3 class="servico-card-titulo">Migração e troca de contador</h3>
+                <p class="servico-card-texto">Transição organizada da sua contabilidade, com mínima interrupção nas rotinas da empresa.</p>
+                <ul class="servico-tags">
+                  <li>Sem burocracia</li>
+                  <li>Rápido</li>
+                  <li>Seguro</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-sobre" id="sobre">
+      <div class="secao-inner sobre-inner">
+        <div class="sobre-grid">
+          <div class="sobre-col-texto">
+            <p class="sobre-badge">+ Nossa história</p>
+            <h2 class="sobre-titulo">
+              Uma década e meia transformando negócios com
+              <span class="sobre-titulo-destaque">contabilidade inteligente</span>
+            </h2>
+            <p class="sobre-lead">
+              A Positiva nasceu da vontade de aproximar números e pessoas: menos surpresas na obrigação fiscal,
+              mais clareza para decidir com segurança — do MEI à empresa em crescimento.
+            </p>
+            <ul class="sobre-lista">
+              <li>
+                <span class="sobre-check" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span>Equipe multidisciplinar alinhada à legislação e às melhores práticas do mercado.</span>
+              </li>
+              <li>
+                <span class="sobre-check" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span>Comunicação direta: você sabe o que foi feito, o que vence e o que impacta o caixa.</span>
+              </li>
+              <li>
+                <span class="sobre-check" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span>Processos digitais com prazos monitorados — sem papel perdido nem retrabalho.</span>
+              </li>
+              <li>
+                <span class="sobre-check" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span>Planejamento tributário alinhado ao perfil da sua empresa, dentro da lei.</span>
+              </li>
+              <li>
+                <span class="sobre-check" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span>Relacionamento de longo prazo: acompanhamos cada fase do seu negócio.</span>
+              </li>
+            </ul>
+            <a class="sobre-cta" href="#contato">Quero esse suporte →</a>
+          </div>
+          <div class="sobre-stats" aria-label="Indicadores">
+            <div class="sobre-stat-card">
+              <p class="sobre-stat-num">15+</p>
+              <p class="sobre-stat-label">Anos de experiência</p>
+            </div>
+            <div class="sobre-stat-card">
+              <p class="sobre-stat-num">500+</p>
+              <p class="sobre-stat-label">Empresas atendidas</p>
+            </div>
+            <div class="sobre-stat-card">
+              <p class="sobre-stat-num">98%</p>
+              <p class="sobre-stat-label">Taxa de retenção</p>
+            </div>
+            <div class="sobre-stat-card">
+              <p class="sobre-stat-num">4h</p>
+              <p class="sobre-stat-label">Tempo médio de retorno</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-contato" id="contato">
+      <div class="secao-inner contato-inner">
+        <div class="contato-grid">
+          <div class="contato-info">
+            <p class="contato-badge">
+              <span class="contato-badge-ico" aria-hidden="true">✦</span>
+              Entre em contato
+            </p>
+            <h2 class="contato-titulo">Vamos conversar sobre o seu negócio</h2>
+            <p class="contato-lead">
+              Estamos prontos para entender suas necessidades e apresentar um plano contábil alinhado ao tamanho e ao momento da sua empresa.
+            </p>
+            <ul class="contato-info-lista">
+              <li class="contato-info-card">
+                <span class="contato-ico" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 11.5C13.381 11.5 14.5 10.381 14.5 9S13.381 6.5 12 6.5 9.5 7.619 9.5 9 10.619 11.5 12 11.5Z" stroke="currentColor" stroke-width="1.75"/><path d="M12 22C16 18 20 14.418 20 10a8 8 0 10-16 0c0 4.418 4 8 8 12Z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="contato-info-texto">
+                  <span class="contato-info-label">Endereço</span>
+                  <span class="contato-info-valor">Rua Exemplo, 123 — Centro — Cidade/UF</span>
+                </div>
+              </li>
+              <li class="contato-info-card">
+                <span class="contato-ico" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="contato-info-texto">
+                  <span class="contato-info-label">Telefone / WhatsApp</span>
+                  <a class="contato-info-valor contato-info-link" href="tel:+5500000000000">(00) 00000-0000</a>
+                </div>
+              </li>
+              <li class="contato-info-card">
+                <span class="contato-ico" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.75"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="contato-info-texto">
+                  <span class="contato-info-label">E-mail</span>
+                  <a class="contato-info-valor contato-info-link" href="mailto:contato@positivacontabilidade.com.br">contato@positivacontabilidade.com.br</a>
+                </div>
+              </li>
+              <li class="contato-info-card">
+                <span class="contato-ico" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-width="1.75"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="contato-info-texto">
+                  <span class="contato-info-label">Horário</span>
+                  <span class="contato-info-valor">Segunda a sexta, 8h às 18h</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="contato-form-wrap">
+            <h3 class="contato-form-titulo">Solicite uma proposta</h3>
+            <p class="contato-form-sub">Preencha o formulário e retornamos em até 4 horas.</p>
+            <form class="contato-form" action="#" method="post">
+              <div class="contato-form-linha contato-form-linha--duas">
+                <label class="contato-field">
+                  <span class="contato-field-label">Nome completo</span>
+                  <input type="text" name="nome" autocomplete="name" placeholder="Seu nome" required>
+                </label>
+                <label class="contato-field">
+                  <span class="contato-field-label">WhatsApp</span>
+                  <input type="tel" name="whatsapp" autocomplete="tel" placeholder="(00) 00000-0000" required>
+                </label>
+              </div>
+              <label class="contato-field">
+                <span class="contato-field-label">E-mail</span>
+                <input type="email" name="email" autocomplete="email" placeholder="seu@email.com" required>
+              </label>
+              <div class="contato-form-linha contato-form-linha--duas">
+                <label class="contato-field">
+                  <span class="contato-field-label">Tipo de empresa</span>
+                  <select name="tipo_empresa" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="mei">MEI</option>
+                    <option value="me">ME</option>
+                    <option value="epp">EPP</option>
+                    <option value="ltda">Ltda</option>
+                    <option value="sa">S/A</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </label>
+                <label class="contato-field">
+                  <span class="contato-field-label">Faturamento mensal</span>
+                  <select name="faturamento" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="ate30">Até R$ 30 mil</option>
+                    <option value="30a80">R$ 30 mil a R$ 80 mil</option>
+                    <option value="80a200">R$ 80 mil a R$ 200 mil</option>
+                    <option value="200a500">R$ 200 mil a R$ 500 mil</option>
+                    <option value="acima500">Acima de R$ 500 mil</option>
+                  </select>
+                </label>
+              </div>
+              <label class="contato-field">
+                <span class="contato-field-label">Mensagem (opcional)</span>
+                <textarea name="mensagem" rows="4" placeholder="Conte um pouco sobre o que você precisa"></textarea>
+              </label>
+              <button type="submit" class="contato-btn-enviar">Enviar proposta →</button>
+              <p class="contato-form-rodape">
+                <span class="contato-lock" aria-hidden="true">🔒</span>
+                Seus dados estão protegidos. Não enviamos spam.
+              </p>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="ano"></span> Positiva Contabilidade. Todos os direitos reservados.</p>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="footer-marca" href="#inicio">
+            <span class="footer-marca-icone" aria-hidden="true">PC</span>
+            <span class="footer-marca-texto">
+              Positiva Contabilidade
+              <small>CRC/RJ 12345-O</small>
+            </span>
+          </a>
+          <p class="footer-desc">
+            Especialistas em contabilidade para pequenas e médias empresas. Transparência, agilidade e resultados reais para o seu negócio crescer.
+          </p>
+          <div class="footer-social">
+            <a class="footer-social-btn" href="#" aria-label="Instagram" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+            </a>
+            <a class="footer-social-btn" href="#" aria-label="LinkedIn" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 9.5V17M8 7.2v.01M16 9.5V17M16 11c0-2-1.5-3-3-3s-3 1-3 3v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="footer-social-btn" href="#" aria-label="YouTube" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M10 10l4 2-4 2v-4z" fill="currentColor"/></svg>
+            </a>
+            <a class="footer-social-btn" href="https://wa.me/" aria-label="WhatsApp" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-11.7 7.7L3 21l2.18-5.45A8.38 8.38 0 1121 11.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.5 9.5c.3 1.8 2.2 4.2 4 5.8 1.8 1.6 3.5 2 4 1.7.5-.3 1-1.2 1.2-1.7.2-.5 0-.9-.3-1.1l-1.5-.9c-.3-.2-.7-.1-1 .1l-.6.5c-.2.2-.5.2-.8 0-1.2-.6-2-1.4-2.6-2.6-.2-.3-.1-.6.1-.8l.5-.6c.2-.3.3-.7.1-1l-.9-1.5c-.2-.3-.6-.5-1.1-.3-.5.2-1.4.7-1.7 1.2z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Serviços">
+          <h3 class="footer-heading">Serviços</h3>
+          <ul class="footer-links">
+            <li><a href="#servicos">Abertura de empresa</a></li>
+            <li><a href="#servicos">Contabilidade fiscal</a></li>
+            <li><a href="#servicos">Departamento pessoal</a></li>
+            <li><a href="#servicos">Planejamento tributário</a></li>
+            <li><a href="#servicos">Consultoria financeira</a></li>
+            <li><a href="#servicos">Migração de contador</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Empresa">
+          <h3 class="footer-heading">Empresa</h3>
+          <ul class="footer-links">
+            <li><a href="#sobre">Quem somos</a></li>
+            <li><a href="#sobre">Nossa equipe</a></li>
+            <li><a href="#">Blog contábil</a></li>
+            <li><a href="#">Cases de sucesso</a></li>
+            <li><a href="#contato">Trabalhe conosco</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Suporte">
+          <h3 class="footer-heading">Suporte</h3>
+          <ul class="footer-links">
+            <li><a href="#">Central de ajuda</a></li>
+            <li><a href="#">Portal do cliente</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Termos de uso</a></li>
+            <li><a href="#contato">Fale conosco</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © <span id="ano"></span> Positiva Contabilidade. Todos os direitos reservados.
+        </p>
+        <div class="footer-badges">
+          <span class="footer-badge">CRC/RJ 12345-O</span>
+          <span class="footer-badge">SESCON-RJ</span>
+          <span class="footer-badge">FENACON</span>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="script/menu.js"></script>

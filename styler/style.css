@@ -1471,3 +1471,15 @@ strong {
   filter: brightness(1.12);
   transform: scale(1.08);
 }
+.header-bar {
+  position: relative; /* ← adiciona essa linha */
+  max-width: 1120px;
+  margin: 0 auto;
+  /* ... resto do código permanece igual */
+}
+.nav-lista {
+  /* ... seu código existente permanece igual ... */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

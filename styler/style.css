@@ -582,6 +582,10 @@ a:hover {
   .hero-visao-card {
     animation: none;
   }
+
+  .servico-card:hover .servico-card-inner {
+    transform: none;
+  }
 }
 
 @media (max-width: 900px) {
@@ -627,8 +631,8 @@ a:hover {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--serv-navy);
-  background: rgba(45, 80, 198, 0.12);
+  color: var(--serv-azul);
+  background: rgba(45, 81, 198, 0.151);
 }
 
 .servicos-badge-ico {
@@ -678,12 +682,18 @@ a:hover {
   border-radius: 14px;
   transition:
     border-color var(--transicao),
-    box-shadow var(--transicao);
+    box-shadow var(--transicao),
+    transform var(--transicao),
+    background var(--transicao);
 }
 
-.servico-card-inner:hover {
-  border-color: rgba(45, 80, 198, 0.22);
-  box-shadow: 0 8px 28px rgba(15, 39, 71, 0.06);
+.servico-card:hover .servico-card-inner {
+  transform: translateY(-5px);
+  border-color: rgba(45, 80, 198, 0.45);
+  box-shadow:
+    0 4px 6px rgba(15, 39, 71, 0.04),
+    0 16px 40px rgba(15, 39, 71, 0.1);
+  background: #f8fafc;
 }
 
 .servico-ico {
@@ -955,7 +965,6 @@ a:hover {
   --contato-texto: #5c6b7a;
   background: var(--contato-bg);
 }
-
 .contato-inner {
   max-width: 1120px;
 }
@@ -1432,4 +1441,33 @@ a.contato-info-link:hover {
 }
 strong {
   color: var(--cor-destaque);
+}
+.contato-info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  background: var(--cor-branco);
+  border-radius: 12px;
+  border: 2px solid rgba(15, 39, 71, 0.06);
+  box-shadow: 0 1.5px 12px rgba(15, 39, 71, 0.04);
+
+  /* HOVER - adicionado */
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  cursor: default;
+}
+
+.contato-info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(15, 39, 71, 0.12);
+  border-color: rgba(67, 97, 238, 0.25);
+}
+
+.contato-ico {
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.contato-info-card:hover .contato-ico {
+  filter: brightness(1.12);
+  transform: scale(1.08);
 }
